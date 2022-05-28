@@ -4,9 +4,13 @@ debugger
 
 let nombre = prompt("¿Cómo te llamás?")
 
-    if (nombre !="") {
-        alert("Hola " + nombre + " vamos a jugar un rato a las adivinanzas")
+    if (nombre =="") {
+        alert("¡Hola ser misterioso!")
     } 
+    
+        else if (nombre !="") {
+            alert("Hola " + nombre + " vamos a jugar un rato a las adivinanzas")
+        } 
 
 
 // Segunda pregunta - Temática
@@ -15,6 +19,10 @@ let temaElegido = prompt("Elegí una temática: ¿música o películas?")
 
 
     // Si eligió temática música
+
+    if (temaElegido =="") {
+        alert("Dale, ponete las pilas. F5 y elegí un tema.")
+    }
 
     if (temaElegido !="" && (temaElegido == "musica" || temaElegido == "MUSICA" || temaElegido == "música" ||temaElegido == "MÚSICA" || temaElegido == "Música")) {
 
@@ -34,43 +42,43 @@ let temaElegido = prompt("Elegí una temática: ¿música o películas?")
                 for (let i = 0; i <= numeroElegidoM; i++) {
 
                     if (i == 1) {
-                        alert("PistaMúsico1")            
+                        alert("Pista " + i + ": Este músico a los 13 años, ya era profesor de piano, teoría y solfeo.")            
                     }
 
                     if (i == 2) {
-                        alert("PistaMúsico2")                
+                        alert("Pista " + i + ": Le gusta el fútbol y es hincha del River Plate.")                
                     }
 
                     if (i == 3) {
-                        alert("PistaMúsico3")                
+                        alert("Pista " + i + ": Tiene vitiligo, afección que desarrolló luego de una crisis nerviosa.")                
                     }
                     
                     if (i == 4) {
-                        alert("PistaMúsico4")                
+                        alert("Pista " + i + ": Fundó 3 bandas diferentes.")                
                     }
 
                     if (i == 5) {
-                        alert("PistaMúsico5")                
+                        alert("Pista " + i + ": Una de ellas, de rock progresivo, se llamó La Máquina de Hacer Pájaros.")                
                     }
 
                     if (i == 6) {
-                        alert("PistaMúsico6")                
+                        alert("Pista " + i + ": En 2009 dio el famoso Concierto Subacuático.")                
                     }
 
                     if (i == 7) {
-                        alert("PistaMúsico7")                
+                        alert("Pista " + i + ": Se tiño el pelo rubio en homenaje a la muerte de Kurt Cobain en 1994.")                
                     }
 
                     if (i == 8) {
-                        alert("PistaMúsico8")                
+                        alert("Pista " + i + ": Es famoso por su oído absoluto.")                
                     }
 
                     if (i == 9) {
-                        alert("PistaMúsico9")                
+                        alert("Pista " + i + ": Hizo una canción en conjunto con su amigo, Luis Alberto Spinetta.")                
                     }
 
                     if (i == 10) {
-                        alert("PistaMúsico10")                
+                        alert("Pista " + i + ": Le gusta ir de la cama al living")                
                     }      
                 
                 }
@@ -80,7 +88,7 @@ let temaElegido = prompt("Elegí una temática: ¿música o películas?")
 
                 let respuesta = 0
 
-                alert("A continuación podrás ingresar la respuesta todas las veces que quieras. Escribilo en MAYÚSCULAS y sin tilde.")
+                alert("A continuación podrás ingresar la respuesta todas las veces que quieras.")
 
                     do {
                         respuesta = prompt("¿Cuál es la respuesta?")
@@ -97,7 +105,7 @@ let temaElegido = prompt("Elegí una temática: ¿música o películas?")
                         }
 
                         if ((respuesta == "CHARLY GARCIA") || (respuesta == "charly garcia") || (respuesta == "CHARLY GARCÍA") || (respuesta == "charly garcía") || (respuesta == "Charly García")) {
-                            alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo")
+                            alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo.")
                         }  
 
                         
