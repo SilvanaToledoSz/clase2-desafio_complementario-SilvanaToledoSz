@@ -32,6 +32,13 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
         let numeroElegidoM = parseInt(prompt("Elegí un número del 1 al 10"))
 
 
+            // Si no indica número
+
+            if (numeroElegidoM != "") {
+                alert("Dale, ponete las pilas. F5 y elegí un tema.")
+            }
+
+
             // Si el número es menor o igual a 10
 
             if (numeroElegidoM <= 10) {
@@ -98,11 +105,14 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
                     while ((respuesta != "CHARLY GARCIA") && (respuesta != "charly garcia") && (respuesta != "CHARLY GARCÍA") && (respuesta != "charly garcía") && (respuesta != "Charly García") && (respuesta != "")) 
 
 
-                        // Alerta si acierta la respuesta
+                        // Alerta si no da respuesta
 
                         if (respuesta == "") {
                             alert("¿Te cansaste de jugar? La respuesta correcta era Charly García.")
                         }
+
+
+                        // Alerta si acierta la respuesta
 
                         if ((respuesta == "CHARLY GARCIA") || (respuesta == "charly garcia") || (respuesta == "CHARLY GARCÍA") || (respuesta == "charly garcía") || (respuesta == "Charly García")) {
                             alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo.")
@@ -130,6 +140,13 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
         // Elegir número-Cantidad de pistas que tendrá
         
         let numeroElegidoP = parseInt(prompt("Elegí un número del 1 al 10"))
+
+
+            // Si no indica número
+
+            if (numeroElegidoP != "") {
+                alert("Dale, ponete las pilas. F5 y elegí un tema.")
+            }
 
 
             // Si el número es menor o igual a 10
@@ -197,12 +214,15 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
 
                     while ((respuesta != "TITANIC") && (respuesta != "titanic") && (respuesta != "Titanic") && (respuesta != "")) 
 
-
-                        // Alerta si acierta la respuesta
+                        
+                        // Alerta si no da respuesta
 
                         if (respuesta == "") {
                             alert("¿Te cansaste de jugar? La respuesta correcta era Titanic.")
                         }
+
+
+                        // Alerta si acierta la respuesta
 
                         if ((respuesta == "TITANIC") || (respuesta == "titanic") || (respuesta == "Titanic")) {
                             alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo.")

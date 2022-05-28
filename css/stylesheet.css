@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Fuentes
+
+font-family: 'Fredoka', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+
+/* Estilo de reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 130%;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-image: linear-gradient(to left, #ff4ea0, #ff8366 , #ffd064, #ecffa9, #bbffff);   
+}
+
+.main__divContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    
+}
+
+.div__contenedorTitulo {
+    margin-top: 10%;
+    width: 75%;
+    height: 400px;
+    opacity: 0.5;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);       
+}
+
+.div__h1 {
+    padding-top: 60px;
+    font-size: 80px;
+    text-transform: uppercase;
+        
+}
+
+.div__p {
+    margin-top: -90px;
+    font-size: 20px;    
+    font-style: italic;
+}
+
+
+
