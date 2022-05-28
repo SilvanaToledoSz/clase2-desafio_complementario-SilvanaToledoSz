@@ -15,14 +15,14 @@ let nombre = prompt("¿Cómo te llamás?")
 
 // Segunda pregunta - Temática
 
-let temaElegido = prompt("Elegí una temática: ¿música o películas?")
-
-
-    // Si eligió temática música
+let temaElegido = prompt("Elegí una temática: ¿música o cine?")    
 
     if (temaElegido =="") {
         alert("Dale, ponete las pilas. F5 y elegí un tema.")
     }
+
+
+    // Si eligió temática música
 
     if (temaElegido !="" && (temaElegido == "musica" || temaElegido == "MUSICA" || temaElegido == "música" ||temaElegido == "MÚSICA" || temaElegido == "Música")) {
 
@@ -120,6 +120,108 @@ let temaElegido = prompt("Elegí una temática: ¿música o películas?")
             }
 
     }
+
+
+    // Si eligió temática cine
+
+    if (temaElegido !="" && (temaElegido == "cine" || temaElegido == "CINE" || temaElegido == "Cine")) {
+
+
+        // Elegir número-Cantidad de pistas que tendrá
+        
+        let numeroElegidoP = parseInt(prompt("Elegí un número del 1 al 10"))
+
+
+            // Si el número es menor o igual a 10
+
+            if (numeroElegidoP <= 10) {
+
+
+                // Inicio de ciclo for para pistas
+
+                for (let i = 0; i <= numeroElegidoP; i++) {
+
+                    if (i == 1) {
+                        alert("Pista " + i + ": está basada en una catástrofe ocurrida en 1912.")            
+                    }
+
+                    if (i == 2) {
+                        alert("Pista " + i + ": la actriz principal casi renuncia a la película luego de contraer neumonía en el set de filmación.")                
+                    }
+
+                    if (i == 3) {
+                        alert("Pista " + i + ": su director fue James Cameron.")                
+                    }
+                    
+                    if (i == 4) {
+                        alert("Pista " + i + ": una de sus frases más populares es ¡Soy el rey del mundo!.")                
+                    }
+
+                    if (i == 5) {
+                        alert("Pista " + i + ": para recrear la escena final se utilizó una piscina gigante de 1 metro de profundidad.")                
+                    }
+
+                    if (i == 6) {
+                        alert("Pista " + i + ": se estrenó en 1997 y fue un éxito mundial.")                
+                    }
+
+                    if (i == 7) {
+                        alert("Pista " + i + ": desató la duda entre los fans de si en el famoso tablón había espacio para los dos.")                
+                    }
+
+                    if (i == 8) {
+                        alert("Pista " + i + ": el tema musical del film fue interpretado por Céline Dion.")                
+                    }
+
+                    if (i == 9) {
+                        alert("Pista " + i + ": costó más dinero hacer la película que lo que en realidad costó hacer el barco original.")                
+                    }
+
+                    if (i == 10) {
+                        alert("Pista " + i + ": fue interpretada por Leonardo DiCaprio y Kate Winslet.")                
+                    }      
+                
+                }
+
+
+                // Inicio de do...while for para envío de respuesta
+
+                let respuesta = 0
+
+                alert("A continuación podrás ingresar la respuesta todas las veces que quieras.")
+
+                    do {
+                        respuesta = prompt("¿Cuál es la respuesta?")
+                        console.log(respuesta)
+                    }
+
+                    while ((respuesta != "TITANIC") && (respuesta != "titanic") && (respuesta != "Titanic") && (respuesta != "")) 
+
+
+                        // Alerta si acierta la respuesta
+
+                        if (respuesta == "") {
+                            alert("¿Te cansaste de jugar? La respuesta correcta era Titanic.")
+                        }
+
+                        if ((respuesta == "TITANIC") || (respuesta == "titanic") || (respuesta == "Titanic")) {
+                            alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo.")
+                        }  
+
+                        
+
+
+            // Si el número NO es menor o igual a 10
+                
+            } else if (numeroElegidoP > 10) {
+
+                alert(nombre + " vas a tener " + numeroElegidoP + " años de mala suerte. Para evitarlos, presioná F5 y volvé a intentarlo.")
+
+            }
+
+    }
+
+    
 
 
 
