@@ -24,7 +24,7 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
 
     // Si eligió temática música
 
-    if (temaElegido !="" && (temaElegido == "musica" || temaElegido == "MUSICA" || temaElegido == "música" ||temaElegido == "MÚSICA" || temaElegido == "Música")) {
+    if (temaElegido !="" && (temaElegido == "musica" || temaElegido == "MUSICA" || temaElegido == "música" ||temaElegido == "MÚSICA" || temaElegido == "Música" || temaElegido == "Musica")) {
 
 
         // Elegir número-Cantidad de pistas que tendrá
