@@ -44,14 +44,25 @@ body {
 
 .div__h1 {
     padding-top: 60px;
-    font-size: 80px;
+    font-size: 40px;
     text-transform: uppercase;   
 }
 
+@media only screen and (min-width: 756px) {
+    .div__h1 {
+        font-size: 80px; 
+    } 
+}
+
 .div__p {
-    margin-top: -90px;
     font-size: 20px;    
     font-style: italic;
+}
+
+@media only screen and (min-width: 756px) {
+    .div__p {
+        margin-top: -90px;
+    } 
 }
 
 
