@@ -102,7 +102,7 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
                         console.log(respuesta)
                     }
 
-                    while ((respuesta != "CHARLY GARCIA") && (respuesta != "charly garcia") && (respuesta != "CHARLY GARCÍA") && (respuesta != "charly garcía") && (respuesta != "Charly García") && (respuesta != "Charly Garcia") && (respuesta != "")) 
+                    while ((respuesta != "CHARLY GARCIA") && (respuesta != "charly garcia") && (respuesta != "CHARLY GARCÍA") && (respuesta != "charly garcía") && (respuesta != "Charly García") && (respuesta != "Charly Garcia") && (respuesta != "Charly garcía") && (respuesta != "Charly garcia") && (respuesta != "")) 
 
 
                         // Alerta si no da respuesta
@@ -114,7 +114,7 @@ let temaElegido = prompt("Elegí una temática: ¿música o cine?")
 
                         // Alerta si acierta la respuesta
 
-                        if ((respuesta == "CHARLY GARCIA") || (respuesta == "charly garcia") || (respuesta == "CHARLY GARCÍA") || (respuesta == "charly garcía") || (respuesta == "Charly García") || (respuesta == "Charly Garcia")) {
+                        if ((respuesta == "CHARLY GARCIA") || (respuesta == "charly garcia") || (respuesta == "CHARLY GARCÍA") || (respuesta == "charly garcía") || (respuesta == "Charly García") || (respuesta == "Charly Garcia") || (respuesta == "Charly garcía") || (respuesta == "Charly garcia")) {
                             alert("¡Felicitaciones " + nombre + " adivinaste! Con esto terminamos el juego, es hora de hacer algo más productivo.")
                         }  
 
